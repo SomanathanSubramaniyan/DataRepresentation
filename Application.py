@@ -1,14 +1,14 @@
-#Lab - week 05
+
 from flask import Flask
 
-app = Flask(__name__,static_url_path='',static_folder='.')
+app = Flask(__name__)
 
 
-@app.route('/')
-def index():
-    return "Hello, world!"
 
-if __name__ == '__main__':
-    app.run(debug=True)
+@app.route("/")
+
+def hello():
+
+    return "Hello World!"
 
     
